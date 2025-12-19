@@ -1,0 +1,87 @@
+# Файлы сборки и исполняемые файлы
+*.exe
+*.out
+*.app
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+
+# Файлы IDE и редакторов
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Файлы CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+
+# Файлы компиляции
+*.obj
+*.pch
+*.pdb
+*.idb
+*.res
+*.ilk
+*.exp
+*.suo
+*.user
+*.aps
+
+# Директории сборки
+build/
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Файлы временные
+*.tmp
+*.temp
+
+# Документация
+docs/_build/
+*.pdf
+*.epub
+*.mobi
+
+# Зависимости
+deps/
+vendor/
+third_party/
+
+# Локальные настройки
+local.properties
+*.local
+.env
+
+# UnitTest++ кэш (если есть)
+*.cache
+*.gcno
+*.gcda
+
+# Опционально: игнорировать тестовые данные
+test_data/
+*.test
+
+# Файлы проекта
+*.cbp
+*.workspace
+
+# Mac OS системные файлы
+.DS_Store
+._*
+
+# Файлы резервных копий
+*.bak
+*.backup
