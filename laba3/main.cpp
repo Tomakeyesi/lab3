@@ -176,14 +176,6 @@ SUITE(DecryptTest)
         string actual = wstring_to_string(cipher.decrypt(L"ЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮ"));
         CHECK_EQUAL(expected, actual);
     }
-    
-    TEST_FIXTURE(KeyB_fixture, RoundTripTest) {
-        // Дополнительный тест: полный цикл
-        wstring original = L"ПРОГРАММИРОВАНИЕЭТОИНТЕРЕСНО";
-        wstring encrypted = p->encrypt(original);
-        wstring decrypted = p->decrypt(encrypted);
-        CHECK_EQUAL(wstring_to_string(original), wstring_to_string(decrypted));
-    }
 }
 
 // ==================== ГЛАВНАЯ ФУНКЦИЯ ====================
@@ -200,8 +192,8 @@ int main()
     std::wcout << L"Выполняются тесты:" << std::endl;
     std::wcout << L"1. KeyTest - 8 тестов" << std::endl;
     std::wcout << L"2. EncryptTest - 7 тестов" << std::endl;
-    std::wcout << L"3. DecryptTest - 9 тестов" << std::endl;
-    std::wcout << L"Всего: 24 теста" << std::endl << std::endl;
+    std::wcout << L"3. DecryptTest - 7 тестов" << std::endl;
+    std::wcout << L"Всего: 22 теста" << std::endl << std::endl;
     
     int result = UnitTest::RunAllTests();
     

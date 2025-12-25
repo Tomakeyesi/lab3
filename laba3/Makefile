@@ -25,4 +25,4 @@ run: clean test
 clean:
 	rm -f $(OBJECTS) $(TARGET)
 
-.PHONY: all test clean
+.PHONY: all test clean run help
